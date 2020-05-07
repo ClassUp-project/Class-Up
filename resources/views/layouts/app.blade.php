@@ -108,13 +108,11 @@
         </nav>
 
 
-
-
-
-
-
-        <main class="p-4">
+          <main class="p-4">
+              <div class="container">
+            @include('partials.alert')
             @yield('content')
+              </div>
         </main>
     </div>
 

@@ -22,6 +22,7 @@ class ProfilesController extends Controller
 
     public function index(User $user)
     {
+
     return view('profiles.index',compact('user'));
 
     }
@@ -38,7 +39,7 @@ class ProfilesController extends Controller
 
 
 
-    public function update(User $user)
+    public function update(User $user,Request $request)
     {
 
         $this->authorize('update', $user->profile ,);
@@ -73,6 +74,8 @@ class ProfilesController extends Controller
 
 
              ));
+
+             $request->session()->flash('success','profile a jour');
 
             return redirect("/profile/{$user->id}");
       }
