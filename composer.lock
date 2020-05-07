@@ -379,16 +379,16 @@
         },
         {
             "name": "giggsey/libphonenumber-for-php",
-            "version": "8.12.2",
+            "version": "8.12.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/giggsey/libphonenumber-for-php.git",
-                "reference": "030682bc4fcdc0c6fb85b68aec2ffeff6978768a"
+                "reference": "efe098354b5dd49a5457d9e35aa92298de736343"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/030682bc4fcdc0c6fb85b68aec2ffeff6978768a",
-                "reference": "030682bc4fcdc0c6fb85b68aec2ffeff6978768a",
+                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/efe098354b5dd49a5457d9e35aa92298de736343",
+                "reference": "efe098354b5dd49a5457d9e35aa92298de736343",
                 "shasum": ""
             },
             "require": {
@@ -443,7 +443,7 @@
                 "phonenumber",
                 "validation"
             ],
-            "time": "2020-04-22T19:37:04+00:00"
+            "time": "2020-05-06T11:46:14+00:00"
         },
         {
             "name": "giggsey/locale",
@@ -637,16 +637,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v6.18.11",
+            "version": "v6.18.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "73bc10bb23aab7539c8ffae6d5dc3c4b277de557"
+                "reference": "39519d03237a81380e2126d667e898e2922db444"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/73bc10bb23aab7539c8ffae6d5dc3c4b277de557",
-                "reference": "73bc10bb23aab7539c8ffae6d5dc3c4b277de557",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/39519d03237a81380e2126d667e898e2922db444",
+                "reference": "39519d03237a81380e2126d667e898e2922db444",
                 "shasum": ""
             },
             "require": {
@@ -779,7 +779,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2020-04-28T15:18:58+00:00"
+            "time": "2020-05-05T15:53:49+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -4517,16 +4517,16 @@
         },
         {
             "name": "composer/composer",
-            "version": "1.10.5",
+            "version": "1.10.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "7a4d5b6aa30d2118af27c04f5e897b57156ccfa9"
+                "reference": "be81b9c4735362c26876bdbfd3b5bc7e7f711c88"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/7a4d5b6aa30d2118af27c04f5e897b57156ccfa9",
-                "reference": "7a4d5b6aa30d2118af27c04f5e897b57156ccfa9",
+                "url": "https://api.github.com/repos/composer/composer/zipball/be81b9c4735362c26876bdbfd3b5bc7e7f711c88",
+                "reference": "be81b9c4735362c26876bdbfd3b5bc7e7f711c88",
                 "shasum": ""
             },
             "require": {
@@ -4545,7 +4545,8 @@
                 "symfony/process": "^2.7 || ^3.0 || ^4.0 || ^5.0"
             },
             "conflict": {
-                "symfony/console": "2.8.38"
+                "symfony/console": "2.8.38",
+                "symfony/phpunit-bridge": "3.4.40"
             },
             "require-dev": {
                 "phpspec/prophecy": "^1.10",
@@ -4593,7 +4594,17 @@
                 "dependency",
                 "package"
             ],
-            "time": "2020-04-10T09:44:22+00:00"
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-05-06T08:28:10+00:00"
         },
         {
             "name": "composer/semver",
@@ -4939,6 +4950,20 @@
                 "sqlite",
                 "sqlserver",
                 "sqlsrv"
+            ],
+            "funding": [
+                {
+                    "url": "https://www.doctrine-project.org/sponsorship.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/phpdoctrine",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Fdbal",
+                    "type": "tidelift"
+                }
             ],
             "time": "2020-04-20T17:19:26+00:00"
         },
@@ -5566,16 +5591,16 @@
         },
         {
             "name": "maximebf/debugbar",
-            "version": "v1.16.2",
+            "version": "v1.16.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/maximebf/php-debugbar.git",
-                "reference": "40f375504a4dd8e59f779c3f3cac524777ddcde5"
+                "reference": "1a1605b8e9bacb34cc0c6278206d699772e1d372"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maximebf/php-debugbar/zipball/40f375504a4dd8e59f779c3f3cac524777ddcde5",
-                "reference": "40f375504a4dd8e59f779c3f3cac524777ddcde5",
+                "url": "https://api.github.com/repos/maximebf/php-debugbar/zipball/1a1605b8e9bacb34cc0c6278206d699772e1d372",
+                "reference": "1a1605b8e9bacb34cc0c6278206d699772e1d372",
                 "shasum": ""
             },
             "require": {
@@ -5623,7 +5648,7 @@
                 "debug",
                 "debugbar"
             ],
-            "time": "2020-04-16T09:05:52+00:00"
+            "time": "2020-05-06T07:06:27+00:00"
         },
         {
             "name": "mockery/mockery",
