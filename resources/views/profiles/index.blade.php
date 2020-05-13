@@ -35,6 +35,7 @@
 
     </style>
 </head>
+ 
 @extends('layouts.app')
 
 @section('content')
@@ -100,11 +101,11 @@
 
 
         @endforeach
-
-
-
+        
+        
     </div>
 </div>
+@include('sweetalert::alert')
 @endsection
 
 </body>
