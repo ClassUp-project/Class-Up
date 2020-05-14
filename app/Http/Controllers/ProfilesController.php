@@ -21,10 +21,11 @@ class ProfilesController extends Controller
 
 
     public function index(User $user)
-    { 
-        Alert::toast('Success Toast','success');
-         
-    return view('profiles.index',compact('user'));
+    {
+        if(session('success_message')){
+             Alert::toast('Ton Profile est à jour &#128512','warning',session('success_message'));
+        }
+        return view('profiles.index',compact('user'));
 
     }
 
@@ -41,7 +42,7 @@ class ProfilesController extends Controller
 
     public function update(User $user,Request $request)
     {
-        
+
 
 
         $this->authorize('update', $user->profile ,);
@@ -77,8 +78,8 @@ class ProfilesController extends Controller
 
              ));
 
-            
-            return redirect("/profile/{$user->id}");
+
+            return redirect("/profile/{$user->id}")->withSuccessMessage('mise a jour');
       }
 
 
