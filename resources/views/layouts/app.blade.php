@@ -18,6 +18,7 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
+
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
@@ -109,12 +110,13 @@
 
 
           <main class="p-4">
-              <div class="container">
-            @include('partials.alert')
-            @yield('content')
-              </div>
-        </main>
-    </div>
+           @include('sweetalert::alert')
+
+              @yield('content')
+
+            </main>
+        </div>
+
 
 
 </body>
