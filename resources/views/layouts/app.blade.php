@@ -110,9 +110,10 @@
 
 
           <main class="p-4">
-           @include('sweetalert::alert')
 
-              @yield('content')
+           {{--notification--}}
+           @include('sweetalert::alert')
+            @yield('content')
 
             </main>
         </div>
