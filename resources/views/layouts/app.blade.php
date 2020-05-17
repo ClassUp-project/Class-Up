@@ -110,7 +110,7 @@
 
 
           <main class="p-4">
-             @include('sweetalert::alert')
+           @include('sweetalert::alert')
 
               @yield('content')
 
