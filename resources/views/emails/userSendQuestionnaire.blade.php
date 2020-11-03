@@ -1,9 +1,9 @@
 @component('mail::message')
 
-<h1> Bienvenue sur Class'Up, {{ $user->surname }}</h1>
+<h1> Un nouveau questionnaire à été envoyé !</h1>
 
 
-On est ravi que tu nous ais rejoins :).
+Jete un oeil maintenant.
 
 {{--
 @component('mail::button', ['url' => ''])
@@ -11,6 +11,6 @@ Button Text
 @endcomponent
 --}}
 
-Plein de réussite ;),<br>
+Good Job ;),<br>
 Team Class'Up
 @endcomponent

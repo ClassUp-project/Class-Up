@@ -5,10 +5,12 @@ namespace App\Http\Controllers\Auth;
 use App\Role;
 use App\User;
 use App\Customer;
+use App\Mail\NewUserWelcomMail;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Mail;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -114,7 +116,6 @@ class RegisterController extends Controller
         ]);
 
 
-
         $user->save();
 
         $user->roles()->attach($roleTable);
@@ -122,7 +123,7 @@ class RegisterController extends Controller
         $user->customer()->attach($info);
 
 
-
+         Mail::to($user->email)->send(new NewUserWelcomMail($user));
 
 
 

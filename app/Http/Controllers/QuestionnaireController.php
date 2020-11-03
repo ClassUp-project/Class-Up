@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\User;
 use App\Questionnaire;
+use Illuminate\Http\Request;
+use App\Mail\userSendQuestionnaire;
+
 
 class QuestionnaireController extends Controller
 {
@@ -14,6 +17,7 @@ class QuestionnaireController extends Controller
     }
 
     public function create(){
+
 
         return view('questionnaire.create');
     }
@@ -30,10 +34,12 @@ class QuestionnaireController extends Controller
 
         $questionnaire = auth()->user()->questionnaires()->create($data);
 
+
+
         return redirect('/questionnaires/'.$questionnaire->id);
     }
 
-    
+
 
     public function show( \App\Questionnaire $questionnaire){
 

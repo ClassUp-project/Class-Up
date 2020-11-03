@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateProfStudentUserTable extends Migration
+class CreateProfEleveUserTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,11 @@ class CreateProfStudentUserTable extends Migration
      */
     public function up()
     {
-        Schema::create('prof_student_user', function (Blueprint $table) {
+        Schema::create('prof_eleve_user', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->bigInteger('classe_id')->unsigned();
-            $table->bigInteger('classe_eleve_id')->unsigned();
+            $table->unsignedBigInteger('classe_id')->nullable();
+            $table->unsignedBigInteger('classe_eleve_id')->nullable();
+            $table->unsignedBigInteger('user_id');
             $table->timestamps();
         });
     }
@@ -28,6 +29,6 @@ class CreateProfStudentUserTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('prof_student_user');
+        Schema::dropIfExists('prof_eleve_user');
     }
 }

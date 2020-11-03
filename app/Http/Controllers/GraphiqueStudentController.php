@@ -41,14 +41,10 @@ class GraphiqueStudentController extends Controller
                     ->get();
         */
 
-        $student = ChoixClasseEleve::with('classeToProfClass')
-                                      ->whereColumn('classe','user_id');
-
-
-
-
-
-
+        $student = User::studentMatch()
+                       ->where(['classe_eleve' =>function($query){
+                       $query->where('classe', '=', 'classe_eleve');
+                       }])->get();
 
 
 

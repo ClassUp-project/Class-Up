@@ -2,6 +2,7 @@
 
 namespace App\Mail;
 
+use App\Questionnaire;
 use mail;
 use App\User;
 use Illuminate\Bus\Queueable;
@@ -11,20 +12,20 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 
 
 
-class NewUserWelcomMail extends Mailable
+class userSendQuestionnaire extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $user;
+    public $questionnaire;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct(User $user)
+    public function __construct(Questionnaire $questionnaire)
     {
-           $this->user = $user;
+           $this->questionnaire = $questionnaire;
     }
 
     /**
@@ -34,6 +35,6 @@ class NewUserWelcomMail extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.welcom-email');
+        return $this->markdown('emails.userSendQuestionnaire');
     }
 }

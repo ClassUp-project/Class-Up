@@ -19,6 +19,17 @@ class Role extends Model
     }
 
 
+    public function roleOnClasseStudent()
+    {
+        return $this->hasMany(\App\ChoixClasseEleve::class,'user_id');
+    }
+
+    public function roleOnClasseProf()
+    {
+        return $this->hasMany(\App\ClasseMatiere::class,'user_id');
+    }
+
+
 
 
 }

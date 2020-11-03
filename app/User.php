@@ -166,4 +166,18 @@ class User extends Authenticatable
 
 
 
+    //function Scope
+    public function scopeStudentMatch($query)
+    {
+         return $query->where('role','student')->get();
+    }
+
+    public function scopeProfesseur($query)
+    {
+         return $query->where('role','professeur');
+    }
+
+
+
+
 }

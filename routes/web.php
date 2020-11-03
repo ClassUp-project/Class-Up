@@ -35,6 +35,7 @@ Route::get('/email', function () {
 */
 
 
+
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/about', 'HelloController@about' );
 
